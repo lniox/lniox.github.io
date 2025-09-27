@@ -29,52 +29,13 @@
       switchTab();
       window.addEventListener('hashchange', switchTab, false);
   })();
-  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.0.0"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/images/L.svg" alt="Blog of lniox" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/lniox/lniox.github.io"><i class="fab fa-github"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/categories/">分类</a></li><li class="is-active"><a href="#" aria-current="page">学习</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-09-25T12:22:50.000Z" title="2025/9/25 20:22:50">2025-09-25</time>发表</span><span class="level-item"><time dateTime="2025-09-25T14:02:07.894Z" title="2025/9/25 22:02:07">2025-09-25</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a></span><span class="level-item">9 分钟读完 (大约1314个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2025/09/25/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/">推荐系统概述</a></p><div class="content"><p>datawhale fun-rec 学习网址：<a target="_blank" rel="noopener" href="https://datawhalechina.github.io/fun-rec/">https://datawhalechina.github.io/fun-rec/</a></p>
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.0.0"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/images/L.svg" alt="Blog of lniox" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/lniox/lniox.github.io"><i class="fab fa-github"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/categories/">分类</a></li><li class="is-active"><a href="#" aria-current="page">学习</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-09-25T12:22:50.000Z" title="2025/9/25 20:22:50">2025-09-25</time>发表</span><span class="level-item"><time dateTime="2025-09-26T07:24:44.467Z" title="2025/9/26 15:24:44">2025-09-26</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a></span><span class="level-item">9 分钟读完 (大约1315个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2025/09/25/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/">推荐系统概述</a></p><div class="content"><p>datawhale fun-rec 学习网址：<a target="_blank" rel="noopener" href="https://datawhalechina.github.io/fun-rec/">https://datawhalechina.github.io/fun-rec/</a></p>
 <h3 id="1-推荐系统核心定义"><a href="#1-推荐系统核心定义" class="headerlink" title="1. 推荐系统核心定义"></a><strong>1. 推荐系统核心定义</strong></h3><p><strong>推荐系统本质</strong>：对关系的量化预测，核心公式为：<code>Score = f(User, Item, Context)</code>，<strong>微观视角</strong>来看是预测用户与物品产生有价值连接的可能性。其核心要素为以下。</p>
 <ul>
 <li><strong>用户</strong>：历史行为、显式反馈、基本画像、实时意图</li>
 <li><strong>物品</strong>：内容属性、统计属性（受欢迎程度、互动趋势）</li>
 <li><strong>场景</strong>：时间、地点、使用环境（工作日&#x2F;周末、地铁&#x2F;家中）</li>
-</ul>
-<p><img src="/./../images/image-20250925220146418.png" alt="推荐系统的核心预测函数 推荐系统通过整合用户特征(U)、物品特征(I)和场景特征(C)，计算用户与物品产生有价值连接的可能性分数。"></p>
-<h3 id="2-推荐系统的三个层次理解"><a href="#2-推荐系统的三个层次理解" class="headerlink" title="2. 推荐系统的三个层次理解"></a><strong>2. 推荐系统的三个层次理解</strong></h3><p>从微观视角来看，其核心是<strong>关系预测</strong>。从最基础的预测单元出发，从”用户可能点击哪个物品”的预测问题开始，通过整合用户、物品、场景信息计算连接可能性。</p>
-<p>从工业视角来看，其核心是<strong>规模化挑战</strong>。</p>
-<p>推荐系统工程化面临的核心矛盾：如何在极有限的时间内，从海量的候选中找到最优的推荐结果？亿级用户与亿级物品的实时匹配计算不可行。解决方案：三阶段流水线架构，包括 <strong>召回 排序 重排</strong>。</p>
-<ul>
-<li><p>召回阶段：从全量库快速筛选几千个候选（追求速度与覆盖度）</p>
-</li>
-<li><p>排序阶段：对候选进行精确预测（使用复杂模型，追求精度）</p>
-</li>
-<li><p>重排阶段：优化结果体验（考虑多样性、新颖性、公平性）</p>
-</li>
-</ul>
-<p><img src="/./../images/image-20250925220114454.png" alt="工业级推荐系统的三阶段流水线架构 通过召回、排序、重排三个阶段，推荐系统将亿级候选逐步筛选为最终推荐列表，在效率与效果之间实现平衡。"></p>
-<p>在不同阶段采用不同的策略，逐步从“可能相关”筛选到“最优匹配”。召回追求速度和覆盖度，排序追求精度，重排追求体验。每个阶段都有其不可替代的价值，共同构成了工业级推荐系统的技术骨架。</p>
-<p>从宏观视角来看，是为了生态系统平衡。推荐系统的最终目标不是单纯追求技术指标的最大化，而是构建一个能让所有参与方长期受益的健康生态。在这个生态中，存在三个基本支点：用户与创作者、内容、平台。核心问题为技术完美的推荐系统≠真正优秀的推荐系统。其中三个主体分别如下。</p>
-<ul>
-<li>用户与创作者：既是消费者也是生产者（UGC&#x2F;PGC&#x2F;AIGC）</li>
-<li>内容：价值的核心媒介（需平衡优质内容与长尾内容）</li>
-<li>平台：生态协调者（平衡短期指标与长期健康）</li>
-</ul>
-<p><strong>优秀推荐系统</strong>是精巧的平衡器，确保三方长期共赢</p>
-<p>UGC（User Generated Content）：普通用户自发创作的内容，规模大但质量差异明显。</p>
-<p>PGC（Professionally Generated Content）：专业团队或机构生产的内容，通常更稳定、更高质量。</p>
-<p>AIGC（AI Generated Content）：由人工智能辅助或自动生成的内容，正在快速兴起，带来新的规模化和个性化可能性</p>
-<p><img src="/./../images/image-20250925220008020.png" alt="推荐系统生态中的三角关系：用户与创作者、内容、平台。用户既是内容的消费者，也是潜在的生产者；内容是价值的核心媒介；平台负责连接与分配。推荐系统需要在三者之间保持动态平衡。"></p>
-<h3 id="3-推荐系统三阶段流水线"><a href="#3-推荐系统三阶段流水线" class="headerlink" title="3. 推荐系统三阶段流水线"></a><strong>3. 推荐系统三阶段流水线</strong></h3><p>召回的目标是快速筛选候选，特点是速度优先，覆盖度优先，代表方法有协同过滤、向量召回、序列召回。</p>
-<p>排序的目标是精确计算分数  ，特点是精度优先，计算成本较高，代表方法有深度学习模型、特征交叉。</p>
-<p>重排的目标是优化用户体验，特点是考虑多样性、公平性，代表方法有基于贪心的重排、基于个性化的重排。</p>
-<h3 id="4-推荐系统设计的关键认知"><a href="#4-推荐系统设计的关键认知" class="headerlink" title="4. 推荐系统设计的关键认知"></a><strong>4. 推荐系统设计的关键认知</strong></h3><ul>
-<li><p><strong>准确率陷阱</strong>：技术指标高不等于价值高（如推荐已知商品）</p>
-</li>
-<li><p><strong>生态思维</strong>：推荐系统不仅是技术问题，更是生态平衡问题</p>
-</li>
-<li><p><strong>动态平衡</strong>：需在用户、创作者、内容、平台之间保持动态平衡</p>
-</li>
-<li><p><strong>长期视角</strong>：有时需牺牲短期指标换取长期生态健康</p>
-</li>
-</ul>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-09-20T13:51:15.000Z" title="2025/9/20 21:51:15">2025-09-20</time>发表</span><span class="level-item"><time dateTime="2025-09-25T13:04:16.315Z" title="2025/9/25 21:04:16">2025-09-25</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a></span><span class="level-item">5 分钟读完 (大约691个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2025/09/20/github%E9%85%8D%E7%BD%AESSH/">github配置SSH</a></p><div class="content"><h3 id="1-为什么需要SSH"><a href="#1-为什么需要SSH" class="headerlink" title="1. 为什么需要SSH"></a><strong>1. 为什么需要SSH</strong></h3><p>GitHub 使用 <strong>SSH（Secure Shell）</strong> 是为了在你和 GitHub 服务器之间建立一个<strong>安全、加密的通信通道</strong>，从而实现<strong>安全的身份验证和数据传输</strong>。</p>
+</ul></div><a class="article-more button is-small is-size-7" href="/2025/09/25/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-09-20T13:51:15.000Z" title="2025/9/20 21:51:15">2025-09-20</time>发表</span><span class="level-item"><time dateTime="2025-09-25T13:04:16.315Z" title="2025/9/25 21:04:16">2025-09-25</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a></span><span class="level-item">5 分钟读完 (大约691个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2025/09/20/github%E9%85%8D%E7%BD%AESSH/">github配置SSH</a></p><div class="content"><h3 id="1-为什么需要SSH"><a href="#1-为什么需要SSH" class="headerlink" title="1. 为什么需要SSH"></a><strong>1. 为什么需要SSH</strong></h3><p>GitHub 使用 <strong>SSH（Secure Shell）</strong> 是为了在你和 GitHub 服务器之间建立一个<strong>安全、加密的通信通道</strong>，从而实现<strong>安全的身份验证和数据传输</strong>。</p>
 <p>当执行执行 <code>git push</code>、<code>git pull</code> 或 <code>git clone</code> 等操作时，GitHub 需要知道：“这个请求真的是来自合法的开发者吗？还是有人冒充？”</p>
 <p>SSH 提供了一种<strong>无需密码、但极其安全的身份认证方式</strong>——基于 <strong>公钥&#x2F;私钥加密机制</strong>。</p></div><a class="article-more button is-small is-size-7" href="/2025/09/20/github%E9%85%8D%E7%BD%AESSH/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-09-16T12:35:38.000Z" title="2025/9/16 20:35:38">2025-09-16</time>发表</span><span class="level-item"><time dateTime="2025-09-17T08:06:00.000Z" title="2025/9/17 16:06:00">2025-09-17</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a></span><span class="level-item">9 分钟读完 (大约1297个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2025/09/16/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E5%B8%B8%E8%A7%81%E6%8C%87%E4%BB%A4/">环境配置常见指令</a></p><div class="content"><h3 id="1-一些知识"><a href="#1-一些知识" class="headerlink" title="1. 一些知识"></a><strong>1. 一些知识</strong></h3><ul>
 <li><strong>包管理器 (Package Manager)</strong>：用于自动化安装、升级、配置和卸载软件包的工具。<code>pip</code> 是 Python 的官方包管理器，主要用于从 Python Package Index (PyPI) 安装库。<code>conda</code> 是一个开源的包和环境管理系统，不仅可以管理 Python 包，还能管理非 Python 的依赖和库，功能更为强大。</li>
